@@ -1,0 +1,305 @@
+// reset default settings
+@import "../css/null.css";
+
+$darkgrayColor: #26272d;
+$lightgrayColor: #8c8f94;
+$buttonBlueColor: #267df4;
+
+@mixin button-text {
+	font-family: Lato;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+nav {
+	padding: 44px 0;
+}
+
+header {
+	height: 1000px;
+	background-size: cover;
+	background-position: bottom;
+	overflow-y: hidden;
+}
+
+h1 {
+	font-family: 'Varela Round';
+	font-size: 62px;
+	line-height: 72px;
+	font-weight: 400;
+	color: $darkgrayColor;
+}
+
+h2 {
+	font-family: 'Varela Round';
+	font-size: 42px;
+	line-height: 52px;
+	font-weight: 400;
+	color: $darkgrayColor;
+}
+
+h5 {
+	font-family: 'Lato';
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 300;
+	color: $darkgrayColor;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	color: $lightgrayColor;
+}
+
+#container {
+	display: block;
+	margin: 0 auto;
+	max-width: 1240px;
+}
+
+.nav__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		li {
+			display: inline-block;
+			margin-right: 42px;
+		}
+	}
+}
+
+.menu ul li:last-child {
+	margin-right: 0;
+}
+
+.nav__link {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: $darkgrayColor;
+}
+
+.nav__link._light-color {
+	color: $lightgrayColor;
+}
+
+.logo {
+	position: relative;
+	max-width: 140px;
+	background-size: contain;
+	background-position: center;
+	top: 3px;
+}
+
+.info {
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		li {
+			display: inline-block;
+			margin-right: 30px;
+		}
+	}
+}
+
+.info ul li:last-child {
+	margin-right: 0;
+}
+
+.nav__button {
+	background-color: $buttonBlueColor;
+	border-radius: 21px;
+}
+
+.nav__button-content {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin: 9px 24px 13px 18px;
+
+	img {
+		max-height: 20px;
+		margin-right: 14px;
+	}
+
+	span {
+		@include button-text;
+		color: #ffffff;
+	}
+}
+
+// I dont now why it wokrs, but..
+path {
+	fill: #fff;
+	stroke: inherit;
+}
+
+.test__color-svg {
+	max-height: 20px;
+	margin-right: 14px;
+}
+
+// It is realy work
+
+.header__content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 72px;
+	text-align: center;
+
+	p {
+		width: 75%;
+		margin-top: 40px;
+	}
+}
+
+.header__button {
+	background-color: rgba($color: #fff, $alpha: 0.5);
+	border: 1px solid rgba($color: $darkgrayColor, $alpha: 0.2);
+	border-radius: 30px;
+	padding: 19px 45px;
+	margin-top: 62px;
+	margin-bottom: 50px;
+}
+
+.header__button-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	img {
+		width: 10px;
+		height: 10px;
+		margin-right: 15px;
+	}
+
+	span {
+		@include button-text;
+		color: $darkgrayColor;
+	}
+}
+
+#benefits {
+	height: 600px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	margin-top: 122px;
+}
+
+.benefits__block {
+	max-width: 493px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 56px;
+
+	img {
+		width: 42px;
+		height: 54px;
+		background-size: contain;
+		background-position: center;
+		margin-bottom: 45px;
+	}
+
+	h5 {
+		margin-bottom: 48px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+#facts {
+	height: 900px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.facts__image {
+	position: absolute;
+	left: -280px;
+	margin: 20px;
+}
+
+.facts__content {
+	max-width: 470px;
+
+	p {
+		margin-top: 72px;
+		margin-bottom: 75px;
+	}
+}
+
+.facts__buttons {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.try-hack {
+	display: flex;
+	align-items: center;
+	background-color: $buttonBlueColor;
+	padding: 14px 19px 14px 26px;
+	border-radius: 30px;
+	margin-right: 20px;
+
+	span {
+		@include button-text();
+		color: #fff;
+		margin-right: 50px;
+	}
+}
+
+.arrow {
+	border: solid #fff;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(-45deg);
+}
+
+.learn-more {
+	background: transparent;
+	border: 1px solid $lightgrayColor;
+	border-radius: 30px;
+	padding: 14px 32px;
+
+	span {
+		@include button-text();
+		color: $darkgrayColor;
+	}
+}
