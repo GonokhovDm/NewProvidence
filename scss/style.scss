@@ -238,7 +238,7 @@ path {
 	}
 }
 
-#facts {
+.first-block {
 	height: 900px;
 	position: relative;
 	display: flex;
@@ -302,4 +302,19 @@ path {
 		@include button-text();
 		color: $darkgrayColor;
 	}
+}
+
+.second-block {
+	width: 1240px;
+	height: 900px;
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.facts__image._mirror {
+	position: absolute;
+
 }
