@@ -12,6 +12,10 @@ $buttonBlueColor: #267df4;
 	font-weight: 400;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 nav {
 	padding: 44px 0;
 }
@@ -319,4 +323,207 @@ path {
 	position: absolute;
 	right: -280px;
 	margin: 20px;
+}
+
+.facts__partners {
+	span {
+		font-family: Lato;
+		font-size: 12px;
+		line-height: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: $darkgrayColor;
+	}
+}
+
+.partners-list {
+	margin-top: 31px;
+
+	img {
+		&:first-child {
+			margin-left: -5px;
+			margin-right: 31px;
+		}
+	}
+}
+
+#interface {
+	width: 100%;
+	padding: 143px 0 123px 0;
+	background-color: #f5f5f8;
+}
+
+.interface-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.block__line {
+		width: 50px;
+		height: 2px;
+		background-color: #267df4;
+		border-radius: 1px;
+		margin-top: 47px;
+		margin-bottom: 43px;
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: $lightgrayColor;
+	}
+
+	.interface-block__images {
+		margin-top: 46px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		background-size: cover;
+	}
+}
+
+#invite {
+	width: 100%;
+	padding: 75px 0 131px 0;
+	background-color: #f5f5f8;
+}
+
+.invite-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.doublestyle-text {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 37px;
+	font-family: Lato;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: $lightgrayColor;
+
+	p {
+		&:first-child {
+			font-weight: 700;
+		}
+
+		&:last-child {
+			opacity: 0.5;
+		}
+	}		
+}
+
+.form-block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 502px;
+	height: 50px;
+	margin-top: 57px;
+	border: 1px solid $lightgrayColor;
+	border-radius: 25px;
+	padding-left: 10px;
+
+	input[type="email"] {
+		width: 70%;
+		font-family: Lato;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #3a3d4b;
+		background-color: transparent;
+	}
+
+	button {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 29%;
+		height: 42px;
+		padding: 10px;
+		border-radius: 21px;
+		background-color: #6fc754;
+
+		span {
+			@include button-text();
+			color: #fff;
+		}
+	}
+}
+
+.text-to-download {
+		font-family: Lato;
+		font-size: 12px;
+		line-height: 1.2;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: $lightgrayColor;
+		margin-top: 66px;	
+		margin-bottom: 22px;
+}
+
+.appstore-button {
+	width: 210px;
+	height: 60px;
+	border-radius: 30px;
+	background: #000;
+}
+
+.button-content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: center;
+
+	img {
+		margin-left: 27px;
+	}
+
+	article {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 18px;
+
+		span {
+			font-family: Lato;
+			font-weight: 400;
+			color: #ffffff;
+
+			&:first-child {				
+				font-size: 12px;
+				line-height: 16px;			
+				margin: 0;	
+			}
+
+			&:last-child {
+				font-size: 23px;
+				line-height: 22px;
+				margin: 0;
+			}
+		}
+	}
 }
